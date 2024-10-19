@@ -25,10 +25,11 @@ export const Footer = () => {
                 </ul>
                 </div>
                 <div className="footer-content-right">
-                    <h2>GET IN TOUCH</h2>
+                    <h2>Dev-Info</h2>
                     <ul>
-                        <li>9994934132</li>
+                        <li>Prasanth<li>
                         <li>prasanth.krm2003@gmail.com</li>
+                        <li>9994934132</li> 
                     </ul>
                 </div>
             </div>
