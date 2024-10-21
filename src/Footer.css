@@ -21,6 +21,11 @@
     grid-template-columns: 2fr 1fr 1fr;
     gap: 20px;
 }
+.footer-des{
+    text-align:justify;
+    padding-right: 40px;
+    font-weight: bold;
+}
 .footer-content-left,.footer-content-center,.footer-content-right{
     display: flex;
     flex-direction: column;
