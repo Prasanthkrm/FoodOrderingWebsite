@@ -4,11 +4,13 @@ import { Cartcontext } from './Cartcontext';
 import { StoreContext } from './StoreContext';
 import emtcart from './frontend_assets/cart.png'
 import './CartPage.css';
+import { useNavigate } from 'react-router-dom';
 
 export const CartPage = () => {
   const { cart, setcart } = useContext(Cartcontext);
   const { cartitem, addbtn, removebtn } = useContext(StoreContext);
   const [total, settotal] = useState(0);
+  const navigate =useNavigate();
   
   useEffect(() => {
     settotal(cart.reduce((acc, cur) => acc + parseInt(cur.price) * (cartitem[cur._id] || 1), 0));
@@ -73,7 +75,7 @@ export const CartPage = () => {
         ))}
       </div>}
       <div className="cart-totol-amt">
-      {cart.length>0?<button>PROCEED TO PAYMENT</button>:<></>}
+      {cart.length>0?<button onClick={()=>navigate('/PlaceOrder')}>PROCEED TO PAYMENT</button>:<></>}
       <h2 className='cart-amt'>Total Amount Rs: {total}</h2>
       </div>
     </div>

@@ -9,6 +9,7 @@ import { CartPage } from './CartPage'
 import { MenuPage } from './MenuPage'
 import { SignupPage } from './SignupPage'
 import { Footer } from './Footer'
+import { PlaceOrder } from './PlaceOrder'
 
 export const OrderFood = () => {
     const[cart,setcart]=useState([]);
@@ -27,6 +28,7 @@ export const OrderFood = () => {
               <Route path="/menu" element={<MenuPage/>} />
               {/* <Route path="/signup" element={<SignupPage/>} /> */}
               <Route path="/Cart" element={<CartPage/>} />
+              <Route path="/PlaceOrder" element={<PlaceOrder/>}/>
             </Routes>
             </div>
           <Footer/>

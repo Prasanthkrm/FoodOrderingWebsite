@@ -9,7 +9,7 @@ export const Footer = () => {
             <div className="footer-content">
                 <div className="footer-content-left">
                 <img className="footer-logo" src="/images/footer-Mom’s Kitchen.png" alt=""/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><div className="footer-social-icons">
+                <p>"Mom's Kitchen" is a delightful food ordering website that brings home-cooked meals to your door. With a diverse menu of fresh dishes, customers can easily browse and order their favorites, satisfying cravings for both hearty dinners and quick snacks.</p><div className="footer-social-icons">
                     <a href="https://www.facebook.com/login.php/"><img src={assets.facebook_icon} alt="" /></a>
                     <a href="https://x.com/i/flow/login"><img src={assets.twitter_icon} alt="" /></a>
                     <a href="https://www.linkedin.com/login"><img src={assets.linkedin_icon} alt="" /></a>
@@ -25,7 +25,7 @@ export const Footer = () => {
                 </ul>
                 </div>
                 <div className="footer-content-right">
-                    <h2>Dev-Info </h2>
+                    <h2>DEVELOPED BY </h2>
                     <ul>
                         <li>Prasanth.M</li>
                         <li>prasanth.krm2003@gmail.com</li>
