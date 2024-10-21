@@ -75,7 +75,7 @@ export const CartPage = () => {
         ))}
       </div>}
       <div className="cart-totol-amt">
-      {cart.length>0?<button onClick={() => navigate('/PlaceOrder', { state: { total } })}>PROCEED TO PAYMENT</button>:<></>}
+      {cart.length>0?<button className='mt-5' onClick={() => navigate('/PlaceOrder', { state: { total } })}>PROCEED TO PAYMENT</button>:<></>}
       <h2 className='cart-amt'>Total Amount Rs: {total}</h2>
       </div>
     </div>
