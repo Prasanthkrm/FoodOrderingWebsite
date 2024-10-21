@@ -31,7 +31,7 @@ export const Header = ({ cart, SetshowLogin }) => {
     };
 
     return (
-        <div className='navbar'>
+        <div className='navbar1'>
             <div className="logo">
                 <img id="logo" src="/images/mom's kitchen1.png" alt="" />
             </div>
@@ -53,27 +53,30 @@ export const Header = ({ cart, SetshowLogin }) => {
                     </div>
                 )}
             </div>)}
-            <div className='navbar-option'>
-            <ul>
-                <li onClick={() => setunderline("home")} className={underline === "home" ? "active" : ""}>
-                    <Link to={"/"}>Home</Link>
-                </li>
-                <li onClick={() => setunderline("menu")} className={underline === "menu" ? "active" : ""}>
-                    <Link to={"/menu"}>Menu</Link>
-                    {/* <a href='#menupage-content'>Menu</a> */}
-                </li>
-                <div className='right-navbar'>
-                    <ul>
-                        <li onClick={() => setunderline("cart")} className={underline === "cart" ? "active" : ""}>
-                            <Link to={"/Cart"}>Cart</Link>
-                        </li>
-                        {cart.length > 0 && <div className="dot"></div>}
-                        <li onClick={() => setunderline("signup")} className={underline === "signup" ? "active" : ""}>
-                            <span onClick={()=>SetshowLogin(true)}>SignUp</span>
-                        </li>
-                    </ul>
-                </div>            
-            </ul>
+            <div className='navbar1-option mt-3'>
+                <ul>
+                    <li onClick={() => setunderline("home")} className={underline === "home" ? "active" : " "}>
+                        <Link to={"/"}>Home</Link>
+                    </li>
+                    <li onClick={() => setunderline("menu")} className={underline === "menu" ? "active" : ""}>
+                        <Link to={"/menu"}>Menu</Link>
+                        {/* <a href='#menupage-content'>Menu</a> */}
+                    </li>
+                    <li onClick={() => setunderline("cart")} className={underline === "cart" ? "active" : ""}>
+    <Link to={"/Cart"} className="cart-link">
+        Cart 
+        <sup>
+            {cart.length > 0 && <div className="dot"></div>}
+        </sup>
+    </Link>
+</li>
+
+                    
+                    <li onClick={() => setunderline("signup")} className={underline === "signup" ? "active" : ""}>
+                                <span onClick={()=>SetshowLogin(true)}>SignUp</span>                        
+                    </li>
+                                
+                </ul>
             </div>
         </div>
     );

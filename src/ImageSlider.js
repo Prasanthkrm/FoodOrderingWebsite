@@ -31,10 +31,10 @@ export const ImageSlider = () => {
   return (
     <>
         <div className="header"  style={{ backgroundImage: `url(${images[currentIndex]})` }}>
-            <div  className="header-contents">
-                <h2>Order your favouurite Food</h2>
-                <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise. our mission is to satisfy your craving and elevate your dining experience, one delicious meal at a time</p>
-                <button><a href="#menupage-content">View menu</a></button>
+            <div  className="header-contents ">
+                <h2 className='fs-1'>Order your favouurite Food</h2>
+                <p className='fs-5'>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise. our mission is to satisfy your craving and elevate your dining experience, one delicious meal at a time</p>
+                <button><a className='text-decoration-none' href="#menupage-content">View menu</a></button>
             </div>
         </div>
     </>

@@ -10,6 +10,9 @@ import { MenuPage } from './MenuPage'
 import { SignupPage } from './SignupPage'
 import { Footer } from './Footer'
 import { PlaceOrder } from './PlaceOrder'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.json'
+
 
 export const OrderFood = () => {
     const[cart,setcart]=useState([]);

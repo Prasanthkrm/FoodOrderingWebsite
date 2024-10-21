@@ -24,7 +24,7 @@
 .footer-des{
     text-align:justify;
     padding-right: 40px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 .footer-content-left,.footer-content-center,.footer-content-right{
     display: flex;

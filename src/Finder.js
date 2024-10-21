@@ -1,6 +1,8 @@
 import React, { useRef } from 'react'
 import "./Finder.css"
 import { menu_list } from './frontend_assets/assets';
+import left from "./frontend_assets/arrow-left-circle.svg"
+import right from "./frontend_assets/arrow-right-circle.svg"
 
 
 export const Finder = ({Category,setCategory}) => {
@@ -28,10 +30,12 @@ export const Finder = ({Category,setCategory}) => {
     <>
     <div id="body">
       <div id="content1">
-        <div className="button-control">
+        <div className="button-control d-flex justify-content-between">
           <h2 className='h2'>What's on your mind? </h2>
-          <button className="scroll-btn left-btn" onClick={scrollLeft}>&#60;</button>
-          <button className="scroll-btn right-btn" onClick={scrollRight}>&#62;</button>
+          <div >
+          <img onClick={scrollLeft} className="scroll-btn left-btn me-4" src={left} alt="LEFT" />
+          <img onClick={scrollRight} className="scroll-btn right-btn me-5" src={right} alt="RIGHT" />
+          </div>
         </div>
         <div className="image" ref={imageContainerRef}>
           {menu_list.map((item,index)=>(

@@ -45,31 +45,15 @@
     text-align: center;
     cursor: pointer;
 }
-
-.button-control {
-    position: relative;
-}
-
 .button-control h2 {
     margin-bottom: 25px;
 }
-
-.scroll-btn {
-    position: absolute;
-    font-size: 20px;
-    padding: 0px 5px;
-    border-radius: 75%;
+.scroll-btn{
+    width: 40px;
+   height: 40px;
 }
 
-.left-btn {
-    right: 80px;
-    top: 2px;
-}
 
-.right-btn {
-    right: 30px;
-    top: 2px;
-}
 
 /* Responsive Design */
 
@@ -147,7 +131,7 @@
 
     .right-btn {
         right: 15px;
-        font-size: 16px;
+        font-size: 1px;
     }
 }
 

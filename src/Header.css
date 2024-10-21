@@ -1,4 +1,4 @@
-.navbar {
+.navbar1 {
   width: 100%;
   height: 10vh; /* Adjusted for better responsiveness */
   background-color: snow;
@@ -19,18 +19,18 @@
   max-width: 125px; /* Limit for larger screens */
 }
 
-.navbar ul {
+.navbar1 ul {
   display: inline-flex;
   align-items: center;
 }
 
-.navbar ul li {
+.navbar1 ul li {
   list-style-type: none;
   margin-left: 4vw;
   cursor: pointer;
 }
 
-.navbar ul a {
+.navbar1 ul a {
   color: #333;
   text-decoration: none;
 }
@@ -39,21 +39,20 @@
   padding-bottom: 2px;
   border-bottom: 2px solid orange;
 }
-
-.right-navbar {
-  position: relative;
+.cart-link {
+  position: relative; /* Set the position to relative for positioning the dot */
+  display: inline-block; /* Ensures the link wraps around the text and dot */
 }
 
-.right-navbar .dot {
-  position: absolute;
-  width: 10px;
-  height: 10px;
+.dot {
+  width: 10px; /* Width of the dot */
+  height: 10px; /* Height of the dot */
   background-color: rgb(255, 187, 0);
-  border-radius: 50%;
-  top: -5.5px;
-  right: 95px; /* Adjusted for responsiveness */
+  border-radius: 50%; /* Makes it circular */
+  position: absolute; /* Position relative to the cart-link */
+  top: -0.5px; /* Adjust this value to position the dot higher */
+  right: -10px; /* Adjust this value to position the dot horizontally */
 }
-
 .header-search {
   padding: 8px 15px;
   width: 35vw; /* Increase width for wider screens */
@@ -97,7 +96,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .navbar {
+  .navbar1 {
       flex-direction: column;
       height: auto;
   }
@@ -107,13 +106,13 @@
       max-width: 200px;
   }
 
-  .navbar ul {
+  .navbar1 ul {
       flex-direction: column;
       align-items: center;
       margin-top: 10px;
   }
 
-  .navbar ul li {
+  .navbar1 ul li {
       margin-left: 0;
       margin-bottom: 10px;
   }
@@ -126,26 +125,26 @@
     width: 100%;
   max-width: 85vw;
   }
-.navbar-option{
+.navbar1-option{
   margin-bottom: 10px;
 }
-  .navbar-option ul{
+  .navbar1-option ul{
     display: flex;
     flex-direction: row;
     gap: 100px;
   }
-  .navbar-option .right-navbar{
+  .navbar1-option .right-navbar{
     margin-top: -8.6px;
   }
 
-  .right-navbar .dot {
+  .right-navbar1 .dot {
       right: 143px; /* Adjust position */
       top: 5px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .navbar {
+  .navbar1 {
       padding: 0 5%;
   }
 
@@ -162,18 +161,18 @@
     width: 100%;
   max-width: 85vw;
   }
-  .navbar-option{
+  .navbar1-option{
     margin-bottom: 10px;
   }
-  .navbar-option ul{
+  .navbar1-option ul{
     display: flex;
     flex-direction: row;
     gap: 50px;
   }
-  .navbar-option .right-navbar{
+  .navbar1-option .right-navbar1{
     margin-top: -8.6px;
   }
-  .right-navbar .dot {
+  .right-navbar1 .dot {
     right: 93px; /* Adjust position */
     top: 5px;
 }
