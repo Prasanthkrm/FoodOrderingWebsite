@@ -31,7 +31,7 @@ export const MenuItems = ({ product }) => {
                     ? <img className='menu-addbtn' onClick={() => addbtn(product._id)} src={assets.add_icon_white} alt='' />
                     : <div className='food_counter'>
                         <img className='menu-minusbtn' onClick={() => removebtn(product._id)} src={assets.remove_icon_red} alt="" />
-                        <p className='menu-itemcount'>{cartitem[product._id]}</p>
+                        <p className='menu-itemcount '>{cartitem[product._id]}</p>
                         <img className='menu-plusbtn' onClick={() => addbtn(product._id)} src={assets.add_icon_green} alt="" />
                     </div>}
             </div>

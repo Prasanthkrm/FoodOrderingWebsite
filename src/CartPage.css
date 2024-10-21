@@ -117,6 +117,8 @@
 .cart-itemcount {
     font-size: 1rem; /* Normal font size for item count */
     font-weight: bold;
+    padding: 0px;
+    margin: 0px;
 }
 
 .btnremove1 {
