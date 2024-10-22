@@ -4,7 +4,7 @@ import './Footer.css'
 import insta1 from './frontend_assets/instagram.png'
 import linked1 from './frontend_assets/linkedin.png'
 import github1 from './frontend_assets/github (1).png'
-// import bg_black from "./frontend_assets/black-brick-wall-background.jpg"
+import bg_black from "./frontend_assets/sl_0210121_40570_20.jpg"
 
 export const Footer = () => {
   return (
@@ -49,10 +49,10 @@ export const Footer = () => {
             </div>
 
         </div> */}
-        
+
         {/* previous style end */}
 
-        <div className="py-5 bg-black footer mt-5" >
+        <div className=" py-5 bg-black footer mt-5" style={{ backgroundImage: `url(${bg_black})` }}>
             <div className=" row d-flex justify-content-between my-5 ">
                 <div className="col-md-4 me-1 mt-5">
                     <h2 className='text-warning fw-bolder'>Mom's Kitchen</h2>

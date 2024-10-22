@@ -33,7 +33,7 @@ export const Header = ({ cart, SetshowLogin }) => {
     return (
         <div className='navbar1'>
             <div className="logo">
-                <img id="logo" src="/images/mom's kitchen1.png" alt="" />
+                <img className='pt-3' id="logo" src="/images/new Mom's Kitchen.png" alt="" />
             </div>
             {underline !=="cart" && underline !=="signup" && (<div ref={searchRef}>
                 <input className='header-search' type="text" placeholder='Search' 
@@ -53,7 +53,7 @@ export const Header = ({ cart, SetshowLogin }) => {
                     </div>
                 )}
             </div>)}
-            <div className='navbar1-option mt-3 me-4'>
+            <div className='navbar1-option mt-3 me-4 fw-bold'>
                 <ul>
                     <li onClick={() => setunderline("home")} className={underline === "home" ? "active" : " "}>
                         <Link to={"/"}>Home</Link>
