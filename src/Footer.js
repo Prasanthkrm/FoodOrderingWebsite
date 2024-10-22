@@ -78,11 +78,11 @@ export const Footer = () => {
                 </div>
                 <hr className='my-4 '/>
             <div className="d-flex justify-content-between">
-                <p className="footer-copyright text-center mt-4 mb-3"> Copyright 2024 © Mom's Kitchen.com - All Right Reserved.</p>
-                <div className="footer-social-icons text-center d-block justify-content-end d-lg-flex rounded-5">
-                    <a className='me-3 mt-1 ' href="https://www.instagram.com/mr_i_m_p_e_r_f_e_c_t__?igsh=ajFwYTlnODc3bWww"><img className='rounded-3' src={insta1} alt="" /></a>
-                    <a className='me-3 mt-1' href="https://linkedin.com/in/prasanth-m-29a243206"><img className='rounded-3' src={linked1} alt="" /></a>
-                    <a className='me-3 mt-1' href="https://github.com/Prasanthkrm   "><img className='rounded-3' src={github1} alt="" /></a>
+                <p className="footer-copyright text-center mt-4 mb-3 flex-wrap me-3">© Mom's Kitchen.com - All Right Reserved.</p>
+                <div className="footer-social-icons text-center d-block justify-content-end d-flex rounded-5 mt-4 mb-3">
+                    <a className='me-3  ' href="https://www.instagram.com/mr_i_m_p_e_r_f_e_c_t__?igsh=ajFwYTlnODc3bWww"><img className='rounded-3' src={insta1} alt="" /></a>
+                    <a className='me-3' href="https://linkedin.com/in/prasanth-m-29a243206"><img className='rounded-3' src={linked1} alt="" /></a>
+                    <a className='me-3' href="https://github.com/Prasanthkrm   "><img className='rounded-3' src={github1} alt="" /></a>
                 </div>
             </div>
             </div>
