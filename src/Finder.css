@@ -79,7 +79,7 @@
 /* For tablets and medium-sized devices (max-width: 1024px) */
 @media (max-width: 1024px) {
     #content1 {
-        height: 30vh; /* Increase height for larger screens */
+        height: 32vh; /* Increase height for larger screens */
     }
 
     .button-control h2 {
@@ -102,7 +102,7 @@
 /* For mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
     #content1 {
-        height: 28vh;
+        height: 30vh;
     }
     .button-control h2 {
         font-size: 1.2rem; /* Smaller header size */
