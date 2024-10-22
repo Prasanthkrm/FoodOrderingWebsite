@@ -14,8 +14,8 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 2vh; /* Use vh for responsive gap */
-    max-width: 50%;
+    gap: 1vh; /* Use vh for responsive gap */
+    min-width: 100%;
     bottom: 10%;
     left: 3vw;
     animation: fadeIn 2s;
@@ -35,13 +35,14 @@
 
 .header-contents p {
     color: white;
-    font-size: clamp(14px, 3vw, 20px); /* Responsive font size */
+    font-size: clamp(12px, 2vw, 18px); /* Responsive font size */
     text-shadow: 0 0 5px #090909,   
                0 0 10px #020202,  
                0 0 20px #302e2e,  
                0 0 40px rgb(0, 0, 0),     
                0 0 80px rgb(0, 0, 0),     
                0 0 120px rgb(0, 0, 0); 
+    width: 90%; /* Adjust width here */
 }
 
 .header-contents button {
@@ -66,29 +67,31 @@
         left: 5vw; /* Adjust position slightly */
     }
     .header-contents h2 {
-        font-size: clamp(26px, 3vw, 50px); /* Adjust headline size */
+        font-size: clamp(22px, 5vw, 45px); /* Adjust headline size */
     }
     .header-contents p {
-        font-size: clamp(16px, 2vw, 22px); /* Adjust paragraph text size */
+        /* font-size: clamp(14px, 2.5vw, 18px); Adjust paragraph text size */
+        width: 80%;
     }
 }
 
 /* For tablets (max-width: 1024px) */
 @media only screen and (max-width: 1024px) {
     .header {
-        height: 35vh; /* Adjust height for tablet-sized devices */
+        height: 50vh; /* Adjust height for tablet-sized devices */
     }
     .header-contents {
-        max-width: 70%; /* Increase width for smaller screens */
+        max-width: 100%; /* Increase width for smaller screens */
         left: 5vw; /* Adjust position */
     }
     .header-contents h2 {
-        font-size: clamp(22px, 5vw, 45px); /* Adjust headline size */
+        font-size: clamp(18px, 4vw, 35px); /* Adjust headline size */
     }
     .header-contents p {
-        font-size: clamp(12px, 2.5vw, 18px); /* Adjust paragraph text size */
+        font-size: clamp(14px, 2.5vw, 18px); 
     }
 }
+
 
 /* For mobile devices (max-width: 768px) */
 @media only screen and (max-width: 768px) {
@@ -101,10 +104,11 @@
         bottom: 15%; /* Adjust bottom positioning */
     }
     .header-contents h2 {
-        font-size: clamp(18px, 6vw, 35px); /* Adjust headline size for mobile */
+        font-size:18px; /* Adjust headline size for mobile */
     }
     .header-contents p {
-        font-size: clamp(12px, 3vw, 16px); /* Adjust text size for mobile */
+        font-size:12px;
+        width: 90%;
     }
     .header-contents button {
         padding: 8px 20px; /* Adjust padding for smaller screens */
@@ -115,21 +119,31 @@
 /* For very small mobile devices (max-width: 480px) */
 @media only screen and (max-width: 480px) {
     .header {
-        height: 30vh; /* Adjust height for very small mobile devices */
+        height: 50vh; /* Use full viewport height for small devices */
     }
+
     .header-contents {
-        max-width: 90%; /* Further increase max-width on very small screens */
-        left: 5vw;
-        bottom: 15%; /* Adjust bottom positioning */
+        max-width: 100%; /* Full width for small devices */
+        left: 0;
+        bottom: 10%; /* Adjust positioning */
+        padding: 0 10px; /* Add some padding */
     }
+
     .header-contents h2 {
-        font-size: clamp(18px, 6vw, 35px); /* Adjust headline size for very small mobile */
+        font-size: clamp(18px, 8vw, 35px); /* Responsive heading size */
+        text-align: center; /* Center text on small screens */
     }
+
     .header-contents p {
-        font-size: clamp(12px, 3vw, 16px); /* Adjust text size for very small mobile */
+        font-size: clamp(12px, 4vw, 16px); /* Responsive paragraph size */
+        text-align: center; /* Center text */
+        width: 100%;
     }
+
     .header-contents button {
-        padding: 8px 20px; /* Adjust padding for very small screens */
-        font-size: clamp(10px, 3vw, 14px); /* Adjust button font size */
+        padding: 12px 30px; /* Adjust button size for small screens */
+        font-size: clamp(10px, 4vw, 14px);
+        display: block;
+        margin: 0 auto; /* Center the button */
     }
 }

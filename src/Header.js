@@ -53,7 +53,7 @@ export const Header = ({ cart, SetshowLogin }) => {
                     </div>
                 )}
             </div>)}
-            <div className='navbar1-option mt-3'>
+            <div className='navbar1-option mt-3 me-4'>
                 <ul>
                     <li onClick={() => setunderline("home")} className={underline === "home" ? "active" : " "}>
                         <Link to={"/"}>Home</Link>

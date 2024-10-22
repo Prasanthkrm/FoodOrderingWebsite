@@ -34,14 +34,14 @@ export const Finder = ({Category,setCategory}) => {
           <h2 className='h2'>What's on your mind? </h2>
           <div >
           <img onClick={scrollLeft} className="scroll-btn left-btn me-4" src={left} alt="LEFT" />
-          <img onClick={scrollRight} className="scroll-btn right-btn me-5" src={right} alt="RIGHT" />
+          <img onClick={scrollRight} className="scroll-btn right-btn me-2" src={right} alt="RIGHT" />
           </div>
         </div>
         <div className="image" ref={imageContainerRef}>
           {menu_list.map((item,index)=>(
           <div onClick={()=>{setCategory(prev=>prev===item.menu_name?"All":item.menu_name)}} key={index}>
             <img className={Category===item.menu_name?"active img":"img"} src={item.menu_image} alt={item.menu_name} />
-            <h3 className='finder_foodname'>{item.menu_name}</h3>
+            <h3 className='finder_foodname mt-2'>{item.menu_name}</h3>
           </div>))}
         </div>  
       </div>

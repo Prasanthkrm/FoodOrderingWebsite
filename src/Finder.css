@@ -1,6 +1,6 @@
 #content1 {
     font-size: large;
-    height: 37vh;
+    height: 42vh;
     margin: 20px 0px;
     padding: 10px;
     padding-top: 20px;
@@ -39,8 +39,7 @@
 }
 
 .finder_foodname {
-    margin-top: 5px;
-    margin-left: -5px;
+    
     color: #6d6b6b;
     text-align: center;
     cursor: pointer;
@@ -59,9 +58,7 @@
 
 /* For screens greater than 1024px */
 @media (min-width: 1024px) {
-    #content1 {
-        height: 45vh; /* Increase height for larger screens */
-    }
+    
 
     .img {
         height: 25vh; /* Increase image size */
@@ -72,24 +69,22 @@
     .button-control h2 {
         font-size: 2rem; /* Increase header size */
     }
-
-    .left-btn, .right-btn {
-        font-size: 22px; /* Increase button size */
+    .finder_foodname{
+        font-size: larger;
     }
 
-    .left-btn {
-        right: 90px; /* Adjust positioning */
-    }
 
-    .right-btn {
-        right: 40px; /* Adjust positioning */
-    }
 }
 
 /* For tablets and medium-sized devices (max-width: 1024px) */
 @media (max-width: 1024px) {
+    #content1 {
+        height: 30vh; /* Increase height for larger screens */
+    }
+
     .button-control h2 {
         font-size: 1.5rem; /* Adjust header size */
+        
     }
     
     .img {
@@ -97,65 +92,52 @@
         width: 130px;
         min-width: 150px;
     }
-    
-    .left-btn {
-        right: 60px;
-        font-size: 18px;
-    }
-
-    .right-btn {
-        right: 20px;
-        font-size: 18px;
+    .scroll-btn{
+        
+        width: 25px;
+       height: 25px;
     }
 }
 
 /* For mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
     #content1 {
-        height: 35vh;
+        height: 28vh;
     }
     .button-control h2 {
         font-size: 1.2rem; /* Smaller header size */
+        
     }
 
     .img {
+
         height: 15vh;
         width: 110px;
         min-width: 130px;
-    }
-
-    .left-btn {
-        right: 50px;
-        font-size: 16px;
-    }
-
-    .right-btn {
-        right: 15px;
-        font-size: 1px;
     }
 }
 
 /* For small mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
     #content1 {
-        height: 30vh;
+        height: 28vh;
     }
     .button-control h2 {
         font-size: 1rem; /* Further reduce header size */
+        
     }
     .img {
-        height: 12vh;
+        height: 15vh;
         width: 90px;
         min-width: 100px;
     }
-
-    .left-btn {
-        right: 40px;
-        font-size: 14px;
+    .scroll-btn{
+        
+        width: 20px;
+       height: 20px;
+    }
+    .finder_foodname{
+        font-size: 12px;
     }
 
-    .right-btn {
-        right: 10px;
-        font-size: 14px;
-    }
 }
