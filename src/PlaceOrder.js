@@ -15,31 +15,31 @@ export const PlaceOrder = () => {
               <h1 className='fs-3 mb-4 text-center'>Delivery Information</h1>
                 <div className="row g-2">
                   <div className="col-sm-6">
-                    <input type="text" class="form-control" id="exampleInput" placeholder="First Name"/>
+                    <input type="text" className="form-control" id="exampleInput1" placeholder="First Name"/>
                   </div>
                   <div className="col-sm-6">
-                    <input type="text" class="form-control" id="exampleInput" placeholder="Last Name"/>
+                    <input type="text" className="form-control" id="exampleInput2" placeholder="Last Name"/>
                   </div>
                   <div className="col-sm-12 mt-3">
-                    <input type="email" class="form-control" id="exampleInput" placeholder="Email Address"/>
+                    <input type="email" className="form-control" id="exampleInput3" placeholder="Email Address"/>
                   </div>
                   <div className="col-12 mt-3">
-                    <input type="text" class="form-control" id="exampleInput" placeholder="Street"/>
+                    <input type="text" className="form-control" id="exampleInput4" placeholder="Street"/>
                   </div>
                   <div className="col-sm-6 mt-3">
-                    <input type="text" class="form-control" id="exampleInput" placeholder="city"/>
+                    <input type="text" className="form-control" id="exampleInput5" placeholder="city"/>
                   </div>
                   <div className="col-sm-6 mt-3">
-                    <input type="text" class="form-control" id="exampleInput" placeholder="State"/>
+                    <input type="text" className="form-control" id="exampleInput6" placeholder="State"/>
                   </div>
                   <div className="col-sm-6 mt-3">
-                    <input type="text" class="form-control" id="exampleInput" placeholder="Country"/>
+                    <input type="text" className="form-control" id="exampleInput7" placeholder="Country"/>
                   </div>
                   <div className="col-sm-6 mt-3">
-                    <input type="number" class="form-control" id="exampleInput" placeholder="Zip Code"/>
+                    <input type="number" className="form-control" id="exampleInput8" placeholder="Zip Code"/>
                   </div>
                   <div className="col-sm-12 mt-3">
-                    <input type="number" class="form-control" id="exampleInput" placeholder="Phone Number"/>
+                    <input type="number" className="form-control" id="exampleInput9" placeholder="Phone Number"/>
                   </div>
                 </div>
             </div>
