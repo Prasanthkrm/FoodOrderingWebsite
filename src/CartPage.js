@@ -19,6 +19,9 @@ export const CartPage = () => {
   function removecart(id) {
     setcart(cart.filter(cart => cart._id !== id));
   }
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+};
 
   return (
     <div className='cart-body'>
@@ -75,7 +78,15 @@ export const CartPage = () => {
         ))}
       </div>}
       <div className="cart-totol-amt">
-      {cart.length>0?<button className='mt-5' onClick={() => navigate('/PlaceOrder', { state: { total } })}>PROCEED TO PAYMENT</button>:<></>}
+      {cart.length > 0 ? (
+    <button className='mt-5' onClick={() => {
+      scrollToTop(); // Scroll to top before navigating
+      navigate('/PlaceOrder', { state: { total } });
+    }}>
+      PROCEED TO PAYMENT
+    </button>
+  ) : <></>}
+
       <h2 className='cart-amt'>Total Amount Rs: {total}</h2>
       </div>
     </div>
