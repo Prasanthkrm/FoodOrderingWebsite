@@ -53,6 +53,9 @@ export const PlaceOrder = () => {
                 <div className="col-sm-6 text-md-start border-bottom border-3 mb-3 fs-4">Total</div>
                 <div className="col-sm-6 text-end border-bottom border-3 mb-3 fs-4 text-sm-end">{fee+total}</div> 
               </div>
+              <div className='row'>
+              <button type="button" class="btn btn-outline-primary">checkout</button>
+              </div>
             </div>
         </div>
       </div>

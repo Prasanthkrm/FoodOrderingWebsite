@@ -1,11 +1,15 @@
 import React from 'react'
 import './Footer.css'
 // import { assets } from './frontend_assets/assets';
+import { Link } from 'react-router-dom';
 import insta1 from './frontend_assets/instagram.png'
 import linked1 from './frontend_assets/linkedin.png'
 import github1 from './frontend_assets/github (1).png'
 import bg_black from "./frontend_assets/sl_0210121_40570_20.jpg"
 
+const scrollToTop = () => {
+    window.scrollTo(0, 0);
+};
 export const Footer = () => {
   return (
     <>
@@ -61,18 +65,18 @@ export const Footer = () => {
                     <div className="col-md-3 mt-5 ">
                         <h2 className='text-warning fw-bolder'>COMPANY</h2>
                         <ul className='list-unstyled fw-bold'>
-                            <li className='mt-3'>Home</li>
-                            <li className='mt-3'>About Us</li>
-                            <li className='mt-3'>Delivery</li>
-                            <li className='mt-3'>Provacy Policy</li>
+                            <li className='mt-3'><Link className='under' onClick={scrollToTop} to="/">Home</Link></li>
+                            <li className='mt-3'><Link className='under' onClick={scrollToTop} to="/about">About Us</Link></li>
+                            <li className='mt-3 under'>Delivery</li>
+                            <li className='mt-3 under'>Privacy Policy</li>
                         </ul>
                     </div>
                     <div className="col-md-4 mt-5">
                     <h2 className='text-warning fw-bolder'>DEVELOPED BY </h2>
                     <ul className='list-unstyled '>
-                        <li className='mt-3 fw-bolder'>Prasanth.M</li>
-                        <li className='mt-3 fw-bolder'>prasanth.krm2003@gmail.com</li>
-                        <li className='mt-3 fw-bolder'>9994934132</li>
+                        <li className='mt-3 fw-bolder under'>Prasanth.M</li>
+                        <li className='mt-3 fw-bolder under'>prasanth.krm2003@gmail.com</li>
+                        <li className='mt-3 fw-bolder under'>9994934132</li>
                     </ul>
                 </div>
                 </div>
