@@ -51,7 +51,7 @@ export const Header = ({ cart, SetshowLogin }) => {
 
     return (
         <>
-        <div className='navbar navbar-expand-lg'>
+        <div className='navbar navbar-expand-lg sticky-top p-0'>
         <div className='navbar1 py-5'>
             <div className="logo container-fluid text-center text-md-start">
                 <img className='pt-3' id="logo" src="/images/new Mom's Kitchen.png" alt="" />
