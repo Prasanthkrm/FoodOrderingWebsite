@@ -6,7 +6,7 @@ export const SignupPage = ({SetshowLogin}) => {
   const [currState,setcurrState]=useState("Sign Up"); 
   return (
     <>
-    <div className="login-popup">
+    <div className="login-popup z-3">
         <form className="login-popup-container">
           <div className="login-popup-title">
             <h2>{currState}</h2>

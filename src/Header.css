@@ -1,7 +1,5 @@
 .navbar{
-  top: 0;
-  z-index: 50;
-  margin-top: 0px;
+  z-index: 2;
 }
 .navbar1 {
   width: 100%;
