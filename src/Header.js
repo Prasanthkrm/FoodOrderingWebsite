@@ -50,8 +50,10 @@ export const Header = ({ cart, SetshowLogin }) => {
     }, [location]); // This effect runs when the location changes
 
     return (
-        <div className='navbar1'>
-            <div className="logo">
+        <>
+        <div className='navbar navbar-expand-lg'>
+        <div className='navbar1 py-5'>
+            <div className="logo container-fluid text-center text-md-start">
                 <img className='pt-3' id="logo" src="/images/new Mom's Kitchen.png" alt="" />
             </div>
             {underline !== "cart" && underline !== "signup" && (
@@ -74,7 +76,7 @@ export const Header = ({ cart, SetshowLogin }) => {
                     )}
                 </div>
             )}
-            <div className='navbar1-option mt-3 me-4 fw-bold'>
+            <div className='navbar1-option mt-2 me-4 fw-bold '>
                 <ul>
                     <li onClick={() => setunderline("home")} className={underline === "home" ? "active" : ""}>
                         <Link to={"/"} onClick={scrollToTop}>Home</Link>
@@ -94,5 +96,7 @@ export const Header = ({ cart, SetshowLogin }) => {
                 </ul>
             </div>
         </div>
+        </div>
+        </>
     );
 };

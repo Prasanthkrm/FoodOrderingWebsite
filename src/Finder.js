@@ -29,7 +29,7 @@ export const Finder = ({Category,setCategory}) => {
   return (
     <>
     <div id="body">
-      <div id="content1">
+      <div id="content1" className='container-fluid '>
         <div className="button-control d-flex justify-content-between">
           <h2 className='h2'>What's on your mind? </h2>
           <div >
