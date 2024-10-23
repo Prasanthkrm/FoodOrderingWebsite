@@ -78,19 +78,19 @@ export const Header = ({ cart, SetshowLogin }) => {
             )}
             <div className='navbar1-option mt-2 me-4 fw-bold '>
                 <ul>
-                    <li onClick={() => setunderline("home")} className={underline === "home" ? "active" : ""}>
+                    <li onClick={() => setunderline("home")} className={underline === "home" ? "active hv" : "hv"}>
                         <Link to={"/"} onClick={scrollToTop}>Home</Link>
                     </li>
-                    <li onClick={() => setunderline("menu")} className={underline === "menu" ? "active" : ""}>
+                    <li onClick={() => setunderline("menu")} className={underline === "menu" ? "active hv" : "hv"}>
                         <Link to={"/menu"} onClick={scrollToTop}>Menu</Link>
                     </li>
-                    <li onClick={() => setunderline("cart")} className={underline === "cart" ? "active" : ""}>
+                    <li onClick={() => setunderline("cart")} className={underline === "cart" ? "active hv" : "hv"}>
                         <Link to={"/Cart"} onClick={scrollToTop} className="cart-link">
                             Cart
                             <sup>{cart.length > 0 && <div className="dot"></div>}</sup>
                         </Link>
                     </li>
-                    <li onClick={() => setunderline("signup")} className={underline === "signup" ? "active" : ""}>
+                    <li onClick={() => setunderline("signup")} className={underline === "signup" ? "active hv" : "hv"}>
                         <span onClick={() => SetshowLogin(true)}>SignUp</span>
                     </li>
                 </ul>

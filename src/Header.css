@@ -14,7 +14,9 @@
   margin: 0;
   padding: 0 2%;
 }
-
+.hv :hover {
+  color: rgb(255, 193, 7); 
+}
 .logo img {
   width: 15vw; /* Reduce size for smaller screens */
   height: auto; /* Maintain aspect ratio */
